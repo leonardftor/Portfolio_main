@@ -1,0 +1,248 @@
+/* -------------------------------
+   GLOBAL STYLES
+---------------------------------- */
+
+:root {
+  --primary-bg: #1d1d1d;
+  --primary-text: #ffffff;
+  --secondary-text: #aaaaaa;
+  --accent: #4caf50;
+  --border-light: #e0e0e0;
+  --font-main: "Droid Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: var(--font-main);
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* -------------------------------
+   NAVBAR
+---------------------------------- */
+
+nav.w3-top {
+  z-index: 1000;
+}
+
+.w3-bar a {
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.w3-bar a:hover {
+  background-color: var(--accent);
+  color: #fff !important;
+}
+
+/* -------------------------------
+   HEADER
+---------------------------------- */
+
+header img.w3-image {
+  object-fit: cover;
+  filter: brightness(85%);
+}
+
+header h1 {
+  letter-spacing: 1px;
+}
+
+/* -------------------------------
+   ABOUT SECTION
+---------------------------------- */
+
+#about {
+  line-height: 1.6;
+  color: var(--primary-text);
+}
+
+#about p {
+  font-size: 1.1rem;
+}
+
+/* -------------------------------
+   EXPERIENCE TIMELINE
+---------------------------------- */
+
+.entries {
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+  position: relative;
+  padding-left: 20px;
+}
+
+.entries::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  background-color: var(--accent);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.entry {
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.entry:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.entry:nth-child(even) {
+  left: 50%;
+}
+
+.entry .title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--primary-text);
+  position: relative;
+}
+
+.entry .title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary-bg);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.entry:nth-child(odd) .title::before {
+  right: -48px;
+}
+
+.entry:nth-child(even) .title::before {
+  left: -48px;
+}
+
+.entry img {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.entry .body {
+  color: var(--secondary-text);
+  line-height: 1.5;
+}
+
+/* Responsive Timeline */
+@media screen and (max-width: 768px) {
+  .entries::before {
+    left: 10px;
+  }
+
+  .entry {
+    width: 100%;
+    text-align: left !important;
+    padding-left: 40px;
+  }
+
+  .entry .title::before {
+    left: -30px !important;
+  }
+}
+
+/* -------------------------------
+   SKILL BARS
+---------------------------------- */
+
+.skill-bar-container {
+  margin: 20px 0;
+  width: 80%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background-color: var(--border-light);
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: var(--accent);
+  width: 0;
+  transition: width 1s ease-out;
+}
+
+/* Skill animation keyframes */
+@keyframes fillHtml {
+  from { width: 0; }
+  to { width: 90%; }
+}
+
+@keyframes fillCss {
+  from { width: 0; }
+  to { width: 80%; }
+}
+
+/* Animated levels */
+.html-level {
+  animation: fillHtml 1s ease-out forwards;
+}
+
+.css-level {
+  animation: fillCss 1.2s ease-out forwards;
+}
+
+/* -------------------------------
+   PROJECTS SECTION
+---------------------------------- */
+
+#projects img {
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#projects img:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+/* -------------------------------
+   FOOTER
+---------------------------------- */
+
+footer {
+  color: var(--primary-text);
+  font-size: 1rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

@@ -6,8 +6,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="assets/Style.css">
 </head>
 <body>
+
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -16,8 +18,9 @@
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#home" class="w3-bar-item w3-button" >Home</a>
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#technical" class="w3-bar-item w3-button">Projects</a>
+     
       
       
     </div>
@@ -26,28 +29,138 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="images/backdrop2.jpeg" alt="Architecture" width="1500" height="400">
+  <img class="w3-image" src="images/backdrop3.png" alt="Architecture" width="1500" height="400">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>LF</b></span> <span class="w3-hide-small w3-text-light-grey">Leonard Francis</span></h1>
-     <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Download Resume</button>
+    <image class="w3-circle" src="images/LF_me.png.jpg" alt="Me" style="width:200px;height:200px;">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black "><b>LF</b></span> <span class="w3-padding w3-black ">Leonard Francis</span></h1>
+     <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="window.open('Portfolio_main/FrancisLeonard.pdf', '_blank')">Download Resume</button>
    
   </div>
 </header>
 
 
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- About Section -->
+<div class="w3-content w3-padding" style="max-width:1564px" id="about">   
+
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="color:white;" id="about"><b>About</b></h3>
+      <p style="color:white;"> A seasoned project manager with over 15 years of experience in leading cross-functional teams and delivering complex projects on time and within budget. Adept at stakeholder management, risk assessment, and resource allocation, with a proven track record of driving project success in fast-paced environments. 
+      Skilled in Agile and Waterfall methodologies, with a strong ability to adapt to changing project requirements and priorities. Committed to fostering collaboration and communication among team members to achieve project goals and exceed client expectations.
+    </p>
+  </div>
+
+
+<div class="entries">
+  <div class="entry">
+    <div class="title big">2022 - To Present</div>
+    <img src="images/TD.png" alt="TD Logo" style="height:50px;">
+    <div class="body">
+      <p> Senior Scrum Master managing multiple PODs across credit card initiatives in the New To Canada space.</p>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">2018 - 2022 </div>
+    <img src="images/CIBC.png" alt="CIBC Logo" style="width:50px;height:50px;">
+    <div class="body">
+      <p> Senior Scrum Master / Project manager overseeing three projects and two PODs in the retail banking product orchestration services.</p>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">2015 - 2018</div>
+    <img src="images/CIBC.png" alt="CIBC Logo" style="width:50px;height:50px;">
+    <div class="body">
+      <p> Advisory application developer for custom in-house CRM solution development and implementation. Supported 
+        migration of legacy systems to new platforms and provided ongoing maintenance and support for existing applications.
+      </p>
+    </div>
+  </div>  
+  <div class="entry">
+    <div class="title">2015 - 2015</div>
+    <img src="images/ifds.jpeg" alt="IFDS Logo" style="width:50px;height:50px;">
+    <div class="body">
+      <p> Senior Business Analyst managing after sales securities trading platform. 
+        Liaised between business stakeholders and technical teams to gather requirements, define project scope, and ensure successful delivery of the trading platform enhancements.
+      </p>
+    </div>
+  
+  </div>
+  <div class="entry">
+    <div class="title">2007 - 2013</div>
+    <img src="images/mashreq.jpeg" alt="Mashreq Logo" style="width:50px;height:50px;">
+    <div class="body">
+      <p>Senior Business Analyst / Project Manager for contact center retail banking initiatives. Credit card onboarding and fulfillment of customer requests. 
+        Led cross-functional teams to deliver projects on time and within budget, ensuring alignment with business objectives and stakeholder expectations.</p>      
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">2005 - 2007</div>
+    <img src="images/mcb.png" alt="mcb Logo" style="width:50px;height:50px;">
+    <div class="body">
+      <p> Senior Manager, revamped the contact center's customer relationship management (CRM) system, improving response times and customer satisfaction scores.</p>
+    </div>
+  </div>
+
+  <!-- <div class="entry">
+    <div class="title">2017</div>
+    <div class="body">
+      <p>Qui facere eos aut suscipit doloremque quos...</p>
+    </div>
+  </div> -->
+</div>
+
+<!--Skills section-->
+<div class="w3-content w3-padding" style="max-width:1564px"></div>
+  <div class="w3-container w3-padding-32" style="color:white;" >
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" id="skills">Skills</h3>
+  </div>
+
+
+
+<section id="skills" class="w3-content w3-padding" style="max-width:1600px;">
+ 
+  <div class="skill-bars-wrapper">
+    <div class="skill-bar-container-right">
+      <span class="skill-name">HTML</span>
+      <div class="skill-bar">
+        <div class="skill-level" style="width:75%;"></div>
+      </div>
+
+      <span class="skill-name">CSS</span>
+      <div class="skill-bar">
+        <div class="skill-level" style="width:75%;"></div>
+      </div>
+    </div>
+    <div class="skill-bar-container-right">
+      <span class="skill-name">JavaScript</span>
+      <div class="skill-bar">
+        <div class="skill-level" style="width:75%;"></div>
+      </div>
+
+      <span class="skill-name">Python</span>
+      <div class="skill-bar">
+        <div class="skill-level" style="width:85%;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--End of Skills section-->
+
+
 
   <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+<div class="w3-content w3-padding" style="max-width:1564px"></div>
+  <div class="w3-container w3-padding-32" style="color:white;" >
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" id="technical">Projects</h3>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Release Planning</div>
-        <img src="images/Tableau_project1.png" alt="House" style="width:100%">
+        <div class="w3-display-topleft w3-black w3-padding" >Release Planning</div>
+        <img src="images/Tableau_project1.png" alt="House" style="width:100%" href="https://public.tableau.com/views/CreditCardProject_17592865577160/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
@@ -73,7 +186,7 @@
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">risk_heatmap</div>
+        <div class="w3-display-topleft w3-black w3-padding">Risk Heatmap</div>
         <img src="images/risk_heatmap.png" alt="House" style="width:99%">
       </div>
     </div>
@@ -92,17 +205,12 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Movie Recommender System</div>
-        <img src="/images/movierecommenderSys.png" alt="House" style="width:99%">
+        <img src="images/movierecommenderSys.png" alt="House" style="width:99%">
       </div>
     </div>
   </div>
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p> A seasoned project manager with over 15 years of experience in leading cross-functional teams and delivering complex projects on time and within budget. Adept at stakeholder management, risk assessment, and resource allocation, with a proven track record of driving project success in fast-paced environments. 
-      Skilled in Agile and Waterfall methodologies, with a strong ability to adapt to changing project requirements and priorities. Committed to fostering collaboration and communication among team members to achieve project goals and exceed client expectations.
-    </p>
+
   </div>
 
 
